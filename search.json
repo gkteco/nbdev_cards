@@ -1,0 +1,52 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "nbdev_cards",
+    "section": "",
+    "text": "A deck of cards demo of nbdev based on ideas from Think Python 2e",
+    "crumbs": [
+      "nbdev_cards"
+    ]
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "nbdev_cards",
+    "section": "Install",
+    "text": "Install\nInstall with pip:\npip install nbdev-cards\nor:\nconda install -c fastai nbdev-cards",
+    "crumbs": [
+      "nbdev_cards"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "nbdev_cards",
+    "section": "How to use",
+    "text": "How to use\nThis lib provides a Card class you can use to create, display, and compare playing cards:\n\nc = Card(suit=1, rank=1)\n\n\nc\n\nCard(rank=A, suit=dimonds)\n\n\nSuits are numbered according to this list:\n\nsuits\n\n['spades', 'dimonds', 'hearts', 'clovers']\n\n\nand these ranks:\n\nranks\n\n[None, 'A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']",
+    "crumbs": [
+      "nbdev_cards"
+    ]
+  },
+  {
+    "objectID": "deck.html",
+    "href": "deck.html",
+    "title": "Deck – A basic deck",
+    "section": "",
+    "text": "source\n\nDeck\n\n Deck ()\n\nA deck of 52 cards, not including jokers\n\ndeck = Deck()\n\n\nlen(deck)\n\n52\n\n\n\nCard(1, 1) in deck\n\nFalse",
+    "crumbs": [
+      "Deck -- A basic deck"
+    ]
+  },
+  {
+    "objectID": "card.html",
+    "href": "card.html",
+    "title": "Card – A basic playing card",
+    "section": "",
+    "text": "We will be using numbers to represent playing card clubs and ranks. These are the suites and ranks:\n\nsuits, ranks\n\n(['spades', 'dimonds', 'hearts', 'clovers'],\n [None, 'A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'])\n\n\n\nsource\n\nCard\n\n Card (suit:int, rank:int)\n\nA playing card\n\n\n\n\nType\nDetails\n\n\n\n\nsuit\nint\nan index into suits\n\n\nrank\nint\nan index into ranks\n\n\n\nHere is an example\n\nc = Card(suit=1, rank=3)\n\n\nc\n\nCard(rank=3, suit=dimonds)\n\n\n\n\nComparision operators\nEqualit, less than, and greater than work on the rank and suit indices\n\nsource\n\nCard.__gt__\n\n Card.__gt__ (a:__main__.Card)\n\nReturn self&gt;value.\n\nsource\n\n\nCard.__lt__\n\n Card.__lt__ (a:__main__.Card)\n\nReturn self&lt;value.\n\nsource\n\n\nCard.__eq__\n\n Card.__eq__ (a:__main__.Card)\n\nReturn self==value.\n\ntest_eq(Card(suit=1, rank=1), Card(suit=1, rank=1))\ntest_ne(Card(suit=1, rank=1), Card(suit=2, rank=2))\n\n\nassert Card(suit=1, rank=3) &lt; Card(suit=2, rank=3), \"Less than assertion fails on Cards\"\n\n\nassert Card(suit=5, rank=3) &gt; Card(suit=2, rank=3), \"Greater than assertion fails on Cards\"",
+    "crumbs": [
+      "Card -- A basic playing card"
+    ]
+  }
+]
