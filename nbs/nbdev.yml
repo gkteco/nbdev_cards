@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "nbdev-cards"
+  site-url: "https://gkteco.github.io/nbdev_cards"
+  description: "This is a test project"
+  repo-branch: main
+  repo-url: "https://github.com/gkteco/nbdev_cards"
